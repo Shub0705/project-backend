@@ -17,7 +17,7 @@ pipeline {
                     docker build . -t shubhamdoc0705/project-backend-img:latest
                     docker push shubhamdoc0705/project-backend-img:latest
                     docker rmi shubhamdoc0705/project-backend-img:latest
-                    kubectl apply -f ./deploy/
+                    kubectl apply -f ./Deploy/
 
                '''
             }
