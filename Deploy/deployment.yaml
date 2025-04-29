@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: backend-app
-          image: shubhamdoc0705/project-backend:latest
+          image: shubhamdoc0705/project-backend-img:latest
           ports:
             - containerPort: 8080
