@@ -14,9 +14,9 @@ pipeline {
          stage('Deploy-K8s'){
             steps {
                sh '''
-                    docker build . -t utkarsh1313/new-project-backend-img:latest
-                    docker push utkarsh1313/new-project-backend-img:latest
-                    docker rmi utkarsh1313/new-project-backend-img:latest
+                    docker build . -t shubhamdoc0705/new-project-backend-img:latest
+                    docker push shubhamdoc0705/new-project-backend-img:latest
+                    docker rmi shubhamdoc0705/new-project-backend-img:latest
                     kubectl apply -f ./deploy/
 
                '''
